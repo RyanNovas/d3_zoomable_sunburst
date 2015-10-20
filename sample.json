@@ -1,6 +1,6 @@
 
 {
-  "name" : "Blue Eyes Meet Bed Stuy",
+  "name" : "Blue Eyes Meet Bed Stuy - Biggie Smalls",
   "children" : [
     {
       "name" : "Juicy",
@@ -12,6 +12,68 @@
         {"name" : "New York Shit", "value" : 1},
         {"name" : "Empire State of Mind", "value" : 1},
         {"name" : "NY, NY", "value" : 1}
+        ]
+      }
+      ]
+    },
+    {
+      "name" : "Everyday Struggle",
+      "children" : [
+        {"name" : "A Day in the Life of A Fool",
+        "total":5,
+        "children":[
+        {"name" : "Dead Fool", "value" : 1},
+        {"name" : "A Day in the Life Of...", "value" : 1},
+        {"name" : "Life of a Fool", "value" : 1},
+        {"name" : "It Go's Down Once Again", "value" : 1},
+        {"name" : "Music of My Hear", "value" : 1}
+        ]
+      }
+      ]
+    },
+    {
+      "name" : "Nasty Boy",
+      "children" : [
+        {"name" : "For Every Man Theres a Woman",
+        "total":1,
+        "children":[
+          {"name" : "THIS SHOULD BE BLANK, BUT RIGHT NOW REQUIRES CHILDREN", "value" : 1}
+        ]
+      }
+      ]
+    },
+    {
+      "name" : "Come On",
+      "children" : [
+        {"name" : "My Way of Life",
+        "total":4,
+        "children":[
+        {"name" : "Come On, Down to the River", "value" : 1},
+        {"name" : "Johnny Comes Marching Home", "value" : 1},
+        {"name" : "Star Wars Theme Song", "value" : 1},
+        {"name" : "Ti,Ti,Ti", "value" : 1}
+        ]
+      }
+      ]
+    },
+    {
+      "name" : "Hypnotize",
+      "children" : [
+        {"name" : "New York, New York",
+        "total":12,
+        "children":[
+        {"name" : "Little Boxes on the Hillside", "value" : 1},
+        {"name" : "Lighter", "value" : 1},
+        {"name" : "The Inksmen", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1},
+        {"name" : "Pillowtalk", "value" : 1}
         ]
       }
       ]
