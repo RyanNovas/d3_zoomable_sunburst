@@ -5,9 +5,9 @@ $( document ).ready(function() {
       radius = Math.min(width, height) / 2;
 
   var x = d3.scale.linear()
-      .range([0, 2 * Math.PI]);
+      .range([0, 2 * Math.PI]); // this goes into detail on why it is 2 * pi http://tauday.com/tau-manifesto
 
-  var y = d3.scale.sqrt()
+  var y = d3.scale.sqrt() //makes growth sub-linear along a range of 0 - radius
       .range([0, radius]);
 
   var color = d3.scale.category20c();
@@ -15,17 +15,19 @@ $( document ).ready(function() {
   var svg = d3.select("#body").append("svg")
       .attr("width", width)
       .attr("height", height)
-    .append("g")
-      .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
+      .append("g") // Child SVG Element, i.e., the track
+      .attr("transform", "translate(" + width * 2 + "," + (height / 2 + 10) + ")"); // LOOK THESE UP
 
-  var partition = d3.layout.partition()
-      .value(function(d) { return d.value; });
+  var partition = d3.layout.partition() // sets the partition mapping hierarchy
+      .value(function(d) { return d.value; }); //LOOK THIS UP
+
+
 
   var arc = d3.svg.arc()
       .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
       .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
-      .innerRadius(function(d) { return Math.max(0, y(d.y)); })
-      .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
+      .innerRadius(function(d) { return Math.max(0, y(d.y)); }) // from center to edge
+      .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); }); // from outer edge
 
 
     var tooltip = d3.select("#body")
@@ -35,31 +37,34 @@ $( document ).ready(function() {
       .style("z-index", "10")
       .style("opacity", 0);
 
-    function format_number(x) {
-      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
+      function format_number(x) {
+         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //removes "," from numbers
+       }
 
 
     function format_name(d) {
       var name = d.name;
-          return  '<b>' + name + '</b><br> (' + format_number(d.value) + ')';
+        return  '<b> Track Name: ' + name + '</b><br> <b> Artist Name: Biggie Smalls </b><br><b>Sampled By: '  + format_number(d.value);
     }
 
-  d3.json("sample.json", function(error, root) {
 
-    var path = svg.selectAll("path")
-        .data(partition.nodes(root))
-      .enter().append("path")
+  d3.json("sample.json", function(error, root) { //error is not called anywhere else and it runs fine without it
+
+    var path = svg.selectAll("path") //paths identify the individual elements
+        .data(partition.nodes(root)) //this maps out each node that descends from the root
+        .enter().append("path")
         .attr("d", arc)
         .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
         .on("click", click)
          .on("mouseover", function(d) {
             tooltip.html(function() {
-                var name = format_name(d);
-                return name;
+                return format_name(d);
+                // next two lines were in the original code base -- cut themout in favor of above line
+                //var name = format_name(d);
+                // return name;
            });
             return tooltip.transition()
-              .duration(50)
+              .duration(100)
               .style("opacity", 0.9);
           })
           .on("mousemove", function(d) {
@@ -73,7 +78,7 @@ $( document ).ready(function() {
 
     function click(d) {
       path.transition()
-        .duration(750)
+        .duration(1750)
         .attrTween("d", arcTween(d));
     }
   });
