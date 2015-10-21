@@ -16,14 +16,14 @@ $( document ).ready(function() {
       .attr("width", width)
       .attr("height", height)
       .append("g") // Child SVG Element, i.e., the track
-      .attr("transform", "translate(" + width * 2 + "," + (height / 2 + 10) + ")"); // LOOK THESE UP
+      .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")"); // LOOK THESE UP
 
   var partition = d3.layout.partition() // sets the partition mapping hierarchy
       .value(function(d) { return d.value; }); //LOOK THIS UP
 
 
 
-  var arc = d3.svg.arc()
+  var arc = d3.svg.arc() // establishes radius and
       .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
       .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
       .innerRadius(function(d) { return Math.max(0, y(d.y)); }) // from center to edge
