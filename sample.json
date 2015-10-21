@@ -8,10 +8,10 @@
         {"trackName" : "New York, New York",
         "total":4,
         "children":[
-          {"trackName" : "Empire State of Mind", "value" : 1, "artistName" : "Jay-Z"},
-          {"trackName" : "New York Shit", "value" : 1},
-          {"trackName" : "Empire State of Mind", "value" : 1, "artistName" : "Jay-Z"},
-          {"trackName" : "NY, NY", "value" : 1}
+        {"trackName" : "Empire State of Mind", "value" : 1, "artistName" : "Jay-Z"},
+        {"trackName" : "New York Shit", "value" : 1},
+        {"trackName" : "Empire State of Mind", "value" : 1},
+        {"trackName" : "NY, NY", "value" : 1}
         ]
       }
       ]
@@ -37,8 +37,7 @@
         {"trackName" : "For Every Man Theres a Woman",
         "total":1,
         "children":[
-          {"trackName" : "THIS SHOULD BE BLANK, BUT RIGHT NOW REQUIRES CHILDREN", "value" : 1},
-            {"trackName" : "THIS SHOULD BE BLANK, BUT RIGHT NOW REQUIRES CHILDREN", "value" : 1}
+          {"trackName" : "THIS SHOULD BE BLANK, BUT RIGHT NOW REQUIRES CHILDREN", "value" : 1}
         ]
       }
       ]

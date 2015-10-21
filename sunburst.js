@@ -53,7 +53,7 @@ $( document ).ready(function() {
         .data(partition.nodes(root)) //runs the partition layout from the root node
         .enter().append("path")
         .attr("d", arc)
-        .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
+        .style("fill", function(d) { return color((d.children ? d : d.parent).trackName); })
         .on("click", click)
          .on("mouseover", function(d) {
             tooltip.html(function() {
