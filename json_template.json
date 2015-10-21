@@ -1,0 +1,45 @@
+
+{
+  "trackName" : "nil",
+  "artistName" : "Name of Artist",
+  "albumName" : "Ready to Die",
+  "year" : number,
+  "link" : "link to music",
+  "children" : [
+    {
+      "trackName" : "Juicy",
+      "artistName" : "Biggie Smalls",
+      "albumName" : "Ready to Die",
+      "year" : number,
+      "link" : "link to music",
+      "children":[
+        {
+         "trackName" : "New York, New York",
+         "artistName" : "Frank Sinatra",
+         "albumName" : "Frank Sinatra Album",
+         "year" : number,
+         "link" : "link to music",
+         "children":[
+          {"trackName" : "NY, NY", "artistName" :  "Name of Artist", "albumName" : "Name of Album", "year" : number, "link"  : "link to music", "value" : 1},
+          {"trackName" : "New York Shit", "artistName" :  "Name of Artist", "albumName" : "Name of Album", "year" : number, "link"  : "link to music", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "Name of Artist","albumName" : "Name of Album", "year" : number, "link"  : "link to music", "value" : 1},
+          {"trackName" : "NY, NY", "artistName" :  "Name of Artist","albumName" : "Name of Album", "year" : number, "link" : "link to music", "value" : 1}
+        ]
+      },
+        {
+         "trackName" : "Some other song",
+         "artistName" : "Frank Sinatra",
+         "albumName" : "Frank Sinatra Album",
+         "year" : integer,
+         "link" : "link to music",
+         "children":[
+          {"trackName" : "NY, NY", "artistName" :  "Name of Artist","albumName" : "Name of Album", "year" : integer, "link"  : "link to music", "value" : 1},
+          {"trackName" : "New York Shit", "artistName" :  "Name of Artist", "albumName" : "Name of Album", "year" : integer, "link"  : "link to music", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "Name of Artist","albumName" : "Name of Album", "year" : integer, "link"  : "link to music", "value" : 1},
+          {"trackName" : "NY, NY", "artistName" :  "Name of Artist","albumName" : "Name of Album", "year" : integer, "link" : "link to music", "value" : 1}
+        ]
+      }
+      ]
+    }
+  ]
+}

@@ -1,79 +1,42 @@
 
 {
-  "trackName" : "Blue Eyes Meet Bed Stuy - Biggie Smalls",
+  "trackName" : "nil",
+  "artistName" : "Biggie Smalls",
+  "albumName" : "Ready to Die",
+  "year" : 1994,
+  "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.",
   "children" : [
     {
       "trackName" : "Juicy",
-      "children" : [
-        {"trackName" : "New York, New York",
-        "total":4,
-        "children":[
-        {"trackName" : "Empire State of Mind", "value" : 1, "artistName" : "Jay-Z"},
-        {"trackName" : "New York Shit", "value" : 1},
-        {"trackName" : "Empire State of Mind", "value" : 1},
-        {"trackName" : "NY, NY", "value" : 1}
+      "artistName" : "Biggie Smalls",
+      "albumName" : "Ready to Die",
+      "year" : 1994,
+      "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.",
+      "children":[
+        {
+         "trackName" : "New York, New York",
+         "artistName" : "Frank Sinatra",
+         "albumName" : "Frank Sinatra Album",
+         "year" : 1969,
+         "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.",
+         "children":[
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York Shit", "artistName" :  "placeHolderArtist", "albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1}
         ]
-      }
-      ]
-    },
-    {
-      "trackName" : "Everyday Struggle",
-      "children" : [
-        {"trackName" : "A Day in the Life of A Fool",
-        "total":5,
-        "children":[
-        {"trackName" : "Dead Fool", "value" : 1},
-        {"trackName" : "A Day in the Life Of...", "value" : 1},
-        {"trackName" : "Life of a Fool", "value" : 1},
-        {"trackName" : "It Go's Down Once Again", "value" : 1},
-        {"trackName" : "Music of My Hear", "value" : 1}
-        ]
-      }
-      ]
-    },
-    {
-      "trackName" : "Nasty Boy",
-      "children" : [
-        {"trackName" : "For Every Man Theres a Woman",
-        "total":1,
-        "children":[
-          {"trackName" : "THIS SHOULD BE BLANK, BUT RIGHT NOW REQUIRES CHILDREN", "value" : 1}
-        ]
-      }
-      ]
-    },
-    {
-      "trackName" : "Come On",
-      "children" : [
-        {"trackName" : "My Way of Life",
-        "total":4,
-        "children":[
-        {"trackName" : "Come On, Down to the River", "value" : 1},
-        {"trackName" : "Johnny Comes Marching Home", "value" : 1},
-        {"trackName" : "Star Wars Theme Song", "value" : 1},
-        {"trackName" : "Ti,Ti,Ti", "value" : 1}
-        ]
-      }
-      ]
-    },
-    {
-      "trackName" : "Hypnotize",
-      "children" : [
-        {"trackName" : "New York, New York",
-        "total":12,
-        "children":[
-        {"trackName" : "Little Boxes on the Hillside", "value" : 1},
-        {"trackName" : "Lighter", "value" : 1},
-        {"trackName" : "The Inksmen", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1},
-        {"trackName" : "Pillowtalk", "value" : 1}
+      },
+        {
+         "trackName" : "Some other song",
+         "artistName" : "Frank Sinatra",
+         "albumName" : "Frank Sinatra Album",
+         "year" : 1969,
+         "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.",
+         "children":[
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York Shit", "artistName" :  "placeHolderArtist", "albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1}
         ]
       }
       ]
