@@ -2,29 +2,33 @@
   "trackName" : null,
   "artistName" : "Artist Name",
   "albumName" : "Name of Album",
-  "year" : Number,
-  "link" : "Link to music",
+  "year" : "Number",
+  "link" : "Link to Music",
+  "uniqueID" : "Number -- NOT String",
   "children" : [
     {
       "trackName" : "First Track on Album",
       "artistName" : "Artist Name",
       "albumName" : "Name of Album",
-      "year" : Number,
-      "link" : "Link to music",
+      "year" : "Number -- NOT String",
+      "link" : "Link to Music",
+      "uniqueID" : "Number -- NOT String",
       "children":[
         {
            "trackName" : "First Sample",
            "artistName" : "Artist Name",
            "albumName" : "Name of Album",
-           "year" : Number,
+           "year" : "Number -- NOT String",
            "link" : "Link to Music",
+           "uniqueID" : "Number -- NOT String",
            "children":[
               {
                 "trackName" : "First Track that also Contains First Sample",
                 "artistName" :  "Artist Name",
                 "albumName" : "Name of Album",
-                "year" : Number,
+                "year" : "Number -- NOT String",
                 "link"  : "Link to Music",
+                "uniqueID" : "Number -- NOT String",
                 "value" : 1
               }
             ]
