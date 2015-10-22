@@ -47,7 +47,7 @@ $( document ).ready(function() {
     }
 
 
-  d3.json("sample.json", function(error, root) { //error is not called anywhere else and it runs fine without it
+  d3.json("json_template.json", function(error, root) { //error is not called anywhere else and it runs fine without it
 
     var path = svg.selectAll("path") //paths identify the individual elements
         .data(partition.nodes(root)) //runs the partition layout from the root node

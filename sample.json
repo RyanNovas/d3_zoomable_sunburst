@@ -1,6 +1,6 @@
 
 {
-  "trackName" : "nil",
+  "trackName" : null,
   "artistName" : "Biggie Smalls",
   "albumName" : "Ready to Die",
   "year" : 1994,
@@ -23,11 +23,48 @@
           {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
           {"trackName" : "New York Shit", "artistName" :  "placeHolderArtist", "albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
           {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
-          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1}
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1}
         ]
       },
         {
          "trackName" : "Some other song",
+         "artistName" : "Frank Sinatra",
+         "albumName" : "Frank Sinatra Album",
+         "year" : 1969,
+         "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.",
+         "children":[
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York Shit", "artistName" :  "placeHolderArtist", "albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1}
+        ]
+      }
+      ]
+    },
+    {
+      "trackName" : "Hypnotize",
+      "artistName" : "Biggie Smalls",
+      "albumName" : "Ready to Die",
+      "year" : 1994,
+      "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.",
+      "children":[
+        {
+         "trackName" : "Sampled Track",
+         "artistName" : "Frank Sinatra",
+         "albumName" : "Frank Sinatra Album",
+         "year" : 1969,
+         "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.",
+         "children":[
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York Shit", "artistName" :  "placeHolderArtist", "albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "NY, NY", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link" : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1},
+          {"trackName" : "New York, Your Bringing Me Down", "artistName" :  "placeHolderArtist","albumName" : "placeHolderAlbum", "year" : 1992, "link"  : "https://www.youtube.com/watch?v=_JZom_gVfuw&ab_channel=TheNotoriousB.I.G.", "value" : 1}
+        ]
+      },
+        {
+         "trackName" : "some other song",
          "artistName" : "Frank Sinatra",
          "albumName" : "Frank Sinatra Album",
          "year" : 1969,
