@@ -13,7 +13,7 @@ $( document ).ready(function() {
       .range([0, radius]);
 
   var color = d3.scale.linear()
-       .domain([0, 20])
+       .domain([1, 16])
        .range(["#DDDDDD", "gray"]);
 
   var svg = d3.select("#body").append("svg")
