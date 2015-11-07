@@ -12,7 +12,9 @@ $( document ).ready(function() {
   var y = d3.scale.sqrt() //makes growth sub-linear along a range of 0 - radius
       .range([0, radius]);
 
-  var color = d3.scale.category20c();
+  var color = d3.scale.linear()
+       .domain([0, 20])
+       .range(["#DDDDDD", "gray"]);
 
   var svg = d3.select("#body").append("svg")
       .attr("width", width)
@@ -34,7 +36,8 @@ $( document ).ready(function() {
       .attr("class", "tooltip")
       .style("position", "absolute")
       .style("z-index", "10")
-      .style("opacity", 0);
+      .style("color", "#D68218")
+      .style("opacity", 100);
 
       function format_number(x) {
          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //removes "," from numbers
@@ -56,7 +59,8 @@ $( document ).ready(function() {
         .data(partition.nodes(root)) //runs the partition layout from the root node
         .enter().append("path")
         .attr("d", arc)
-        .style("fill", function(d) { return color((d.children ? d : d.parent).trackName); })
+        .style("fill", function(d) {
+          return color((d.children ? d.children.length : (d.parent.children.length * 1.1))); })
         .on("click", click)
          .on("mouseover", function(d) {
             tooltip.html(function() {
@@ -71,8 +75,8 @@ $( document ).ready(function() {
           })
           .on("mousemove", function(d) {
             return tooltip
-              .style("top", (d3.event.pageY-10)+"px")
-              .style("left", (d3.event.pageX+10)+"px");
+              .style("top", (d3.event.pageY-50)+"px")
+              .style("left", (d3.event.pageX+30)+"px");
           })
           .on("mouseout", function(){return tooltip.style("opacity", 0);});
 
