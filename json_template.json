@@ -6,7 +6,8 @@
   "link" : "Link to Music",
   "uniqueID" : "Number -- NOT String",
   "children" : [
-      {"trackName":"Jazz","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":[
+      {"trackName":"Jazz","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":
+        [
         {
            "trackName" : "First Sample",
            "artistName" : "Artist Name",
@@ -15,16 +16,11 @@
            "link" : "Link to Music",
            "uniqueID" : "Number -- NOT String",
            "children":[
-              {
-                "trackName" : "First Track that also Contains First Sample",
-                "artistName" :  "Artist Name",
-                "albumName" : "Name of Album",
-                "year" : "Number -- NOT String",
-                "link"  : "Link to Music",
-                "uniqueID" : "Number -- NOT String",
-                "value" : 1
-              }
-            ]
+                  {"trackName":"Everyday Struggle","artistName":"The Notorious B.I.G.","albumName":"Ready to Die","year":1994,"link":null,"children":null,"value":1},
+                  {"trackName":"Eat Em up L Chill","artistName":"LL Cool J","albumName":"Mama Said Knock You Out","year":1990,"link":null,"children":null,"value":1},
+                 {"trackName":"m.A.A.dCity","artistName":"Kendrick Lamar feat. MOEiht","albumName":"Good Kid, M.A.A.D City","year":2012,"link":null,"children":null,"value":1},
+                 {"trackName":"A Bird in the Hand","artistName":"Ice Cube","albumName":"Death Certificate","year":1991,"link":null,"children":null,"value":1},
+                 {"trackName":"Hip Hop Hooray","artistName":"Naughty by Nature","albumName":"19 Naughty III","year":1993,"link":null,"children":null,"value":1}]
           }
         ]},
       {"trackName":"The Infamous Date Rape","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":[        {

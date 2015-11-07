@@ -42,7 +42,11 @@ $( document ).ready(function() {
 
 
     function toolTipText(d) {
+      if (d.trackName !== null) {
         return  '<b> Track Name: ' + d.trackName + '</b><br><b>Album Name:  ' + d.albumName + '</b><br><b> Artist Name: ' + d.artistName + '</b><br><b>Year: '  + d.year;
+      } else {
+        return  '<b>Album Name:  ' + d.albumName + '</b><br><b> Artist Name: ' + d.artistName + '</b><br><b>Year: '  + d.year;
+      }
     }
 
 
