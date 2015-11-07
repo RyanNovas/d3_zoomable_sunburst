@@ -1,19 +1,12 @@
 {
   "trackName" : null,
-  "artistName" : "Artist Name",
-  "albumName" : "Name of Album",
-  "year" : "Number",
+  "artistName" : "A Tribe Called Quest",
+  "albumName" : "The Low End theory",
+  "year" : "1991",
   "link" : "Link to Music",
   "uniqueID" : "Number -- NOT String",
   "children" : [
-    {
-      "trackName" : "First Track on Album",
-      "artistName" : "Artist Name",
-      "albumName" : "Name of Album",
-      "year" : "Number -- NOT String",
-      "link" : "Link to Music",
-      "uniqueID" : "Number -- NOT String",
-      "children":[
+      {"trackName":"Jazz","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":[
         {
            "trackName" : "First Sample",
            "artistName" : "Artist Name",
@@ -33,7 +26,27 @@
               }
             ]
           }
-        ]
-      }
-   ]
+        ]},
+      {"trackName":"The Infamous Date Rape","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":[        {
+                 "trackName" : "First Sample",
+                 "artistName" : "Artist Name",
+                 "albumName" : "Name of Album",
+                 "year" : "Number -- NOT String",
+                 "link" : "Link to Music",
+                 "uniqueID" : "Number -- NOT String",
+                 "children":[
+                    {
+                      "trackName" : "First Track that also Contains First Sample",
+                      "artistName" :  "Artist Name",
+                      "albumName" : "Name of Album",
+                      "year" : "Number -- NOT String",
+                      "link"  : "Link to Music",
+                      "uniqueID" : "Number -- NOT String",
+                      "value" : 1
+                    }
+                  ]
+                }
+              ]},
+      {"trackName":"Excursions","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":null},
+      {"trackName":"Buggin Out","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":null}]
 }

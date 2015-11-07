@@ -17,7 +17,7 @@ $( document ).ready(function() {
   var svg = d3.select("#body").append("svg")
       .attr("width", width)
       .attr("height", height)
-      .append("g") // way of grouping svg elements -- kind of like a div
+      .append("g") // way of grouping svg elemtents -- kind of like a div
       .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");  //translate is where the element is moved by x,y
 
   var partition = d3.layout.partition() // creates partition layout
@@ -42,8 +42,7 @@ $( document ).ready(function() {
 
 
     function toolTipText(d) {
-      // var name = d.name;
-        return  '<b> Track Name: ' + d.trackName + '</b><br> <b> Artist Name: ' + d.artistName + '</b><br><b>Sampled By: '  + format_number(d.value);
+        return  '<b> Track Name: ' + d.trackName + '</b><br><b>Album Name:  ' + d.albumName + '</b><br><b> Artist Name: ' + d.artistName + '</b><br><b>Year: '  + d.year;
     }
 
 
