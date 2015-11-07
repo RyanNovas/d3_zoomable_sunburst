@@ -8,41 +8,30 @@
   "children" : [
       {"trackName":"Jazz","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":
         [
-        {
-           "trackName" : "First Sample",
-           "artistName" : "Artist Name",
-           "albumName" : "Name of Album",
-           "year" : "Number -- NOT String",
-           "link" : "Link to Music",
-           "uniqueID" : "Number -- NOT String",
-           "children":[
-                  {"trackName":"Everyday Struggle","artistName":"The Notorious B.I.G.","albumName":"Ready to Die","year":1994,"link":null,"children":null,"value":1},
-                  {"trackName":"Eat Em up L Chill","artistName":"LL Cool J","albumName":"Mama Said Knock You Out","year":1990,"link":null,"children":null,"value":1},
+        {"trackName":"Don't Change Your Love","artistName":"Five Stairsteps","albumName":"Live at Yankee Stadium","year":1969,"link":null,"children": [
+                 {"trackName":"Everyday Struggle","artistName":"The Notorious B.I.G.","albumName":"Ready to Die","year":1994,"link":null,"children":null,"value":1},
+                 {"trackName":"Eat Em up L Chill","artistName":"LL Cool J","albumName":"Mama Said Knock You Out","year":1990,"link":null,"children":null,"value":1},
                  {"trackName":"m.A.A.dCity","artistName":"Kendrick Lamar feat. MOEiht","albumName":"Good Kid, M.A.A.D City","year":2012,"link":null,"children":null,"value":1},
                  {"trackName":"A Bird in the Hand","artistName":"Ice Cube","albumName":"Death Certificate","year":1991,"link":null,"children":null,"value":1},
                  {"trackName":"Hip Hop Hooray","artistName":"Naughty by Nature","albumName":"19 Naughty III","year":1993,"link":null,"children":null,"value":1}]
-          }
+          },
+          {"trackName":"Green Dolphin Street","artistName":"Lucky Thompson","albumName":"Friday the 13th: Cook County Jail","year":1972,"link":null,"children": [
+                  {"trackName":"Soul Flower (We've Got)","artistName":"Amerigo Gazaway","albumName":"Bizzarre Tribe: A Quest to the Pharcyde","year":2013,"link":null,"children":null,"value":1},
+                  {"trackName":"Get Off My Log (The Jazzfatwoody remix)","artistName":"Milk Dee ft. Jazzyfatnastees","albumName":"Never Dated","year":1994,"link":null,"children":null,"value":1}]
+            }
         ]},
-      {"trackName":"The Infamous Date Rape","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":[        {
-                 "trackName" : "First Sample",
-                 "artistName" : "Artist Name",
-                 "albumName" : "Name of Album",
-                 "year" : "Number -- NOT String",
-                 "link" : "Link to Music",
-                 "uniqueID" : "Number -- NOT String",
-                 "children":[
-                    {
-                      "trackName" : "First Track that also Contains First Sample",
-                      "artistName" :  "Artist Name",
-                      "albumName" : "Name of Album",
-                      "year" : "Number -- NOT String",
-                      "link"  : "Link to Music",
-                      "uniqueID" : "Number -- NOT String",
-                      "value" : 1
-                    }
-                  ]
-                }
-              ]},
+      {"trackName":"The Infamous Date Rape","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":
+        [
+          {"trackName":"Gentle Smiles","artistName":"Gary Bartz","albumName":"The Shadow Do","year":1975,"link":null,"children":
+                  [{"trackName":"Stress","artistName":"Technical","albumName":"Stress/This Blunt (single)","year":1998,"link":null,"children":null,"value":1},
+                  {"trackName":"Right Here","artistName":"DJ Mitsu feat. Dwele","albumName":"The Soul Mixtape","year":2005,"link":null,"children":null,"value":1},
+                  {"trackName":"The Theme","artistName":"Tek 9","albumName":"It’s Not What You Think It Is !?!!","year":1999,"link":null,"children":null,"value":1},
+                  {"trackName":"Third of the Trio","artistName":"The Beatnuts","albumName":"Intoxicated Demons: The EP","year":1993,"link":null,"children":null,"value":1}]},
+          {"trackName":"Young and Fine","artistName":"Weather Report","albumName":"Mr. Gone","year":1978,"link":null,"children":
+                  [{"Da Ntro":"Les Anneés 2000","DJ Jazzy Jeff ft. Baby and Pauly Yamz":"Democrates","The Magnificent":"La Voie Du Peuple ","2002":1995,"link":null,"children":null,"value":1},
+                  {"Da Ntro":"Soul Flower (We've Got)","DJ Jazzy Jeff ft. Baby and Pauly Yamz":"Amerigo Gazaway","The Magnificent":"Bizzarre Tribe: A Quest to the Pharcyde","2002":2013,"link":null,"children":null,"value":1}]},
+          {"trackName":"I Like Everything About You","artistName":"Chuck Johnson","albumName":"Chuck Jackson Arrives","year":1968,"link":null,"children":null}]
+      },
       {"trackName":"Excursions","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":null},
       {"trackName":"Buggin Out","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":null}]
 }
