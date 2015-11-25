@@ -13,7 +13,7 @@ $( document ).ready(function() {
       .range([0, radius]);
 
   var color = d3.scale.linear()
-       .domain([0, 20])
+       .domain([1, 16])
        .range(["#DDDDDD", "gray"]);
 
   var svg = d3.select("#body").append("svg")
@@ -36,7 +36,8 @@ $( document ).ready(function() {
       .attr("class", "tooltip")
       .style("position", "absolute")
       .style("z-index", "10")
-      .style("color", "#D68218")
+      .style("background", "#D68218")
+      .style("color", "black")
       .style("opacity", 100);
 
       function format_number(x) {
