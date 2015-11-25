@@ -53,6 +53,13 @@ $( document ).ready(function() {
       }
     }
 
+    function playAudio(d) {
+      var audio = new Audio('Audio/purrr.mp3');
+        audio.play();
+    }
+
+    function stopAudio(d)
+
 
   d3.json("json_template.json", function(error, root) { //error is not called anywhere else and it runs fine without it
 
@@ -65,6 +72,7 @@ $( document ).ready(function() {
         .on("click", click)
          .on("mouseover", function(d) {
             tooltip.html(function() {
+              playAudio(d);
                 return toolTipText(d);
                 // next two lines were in the original code base -- cut themout in favor of above line
                 //var name = format_name(d);
