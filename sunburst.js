@@ -44,9 +44,17 @@ $( document ).ready(function() {
          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //removes "," from numbers
        }
 
+    var audio = function(dAudio){
+      if (x.currentTime !== 0 && typeof x.currentTime != "undefined" ) {
+        x.pause();
+      }
+      x = new Audio('Audio/purrr.mp3');
+      x.play();
+    };
 
     function toolTipText(d) {
       if (d.trackName !== null) {
+        audio(d.trackName);
         return  '<b> Track Name: ' + d.trackName + '</b><br><b>Album Name:  ' + d.albumName + '</b><br><b> Artist Name: ' + d.artistName + '</b><br><b>Year: '  + d.year;
       } else {
         return  '<b>Album Name:  ' + d.albumName + '</b><br><b> Artist Name: ' + d.artistName + '</b><br><b>Year: '  + d.year;
@@ -64,6 +72,7 @@ $( document ).ready(function() {
           return color((d.children ? d.children.length : (d.parent.children.length * 1.1))); })
         .on("click", click)
          .on("mouseover", function(d) {
+
             tooltip.html(function() {
                 return toolTipText(d);
                 // next two lines were in the original code base -- cut themout in favor of above line
@@ -82,6 +91,7 @@ $( document ).ready(function() {
           .on("mouseout", function(){return tooltip.style("opacity", 0);});
 
     function click(d) {
+
       path.transition()
         .duration(650)
         .attrTween("d", arcTween(d));
