@@ -1,6 +1,8 @@
 require 'json'
 require 'pry'
 
+class Parser
+
 null = "null"
 
 sunburst = {
@@ -106,24 +108,40 @@ sunburst = {
 
 network = {"nodes"=>[], "links"=>[]}
 
-def conversion (json, output)
+def self.conversion (json, output, relation = nil)
+  relation = {'parents' =>[]} if relation == nil
+  @relation = relation
   json.map do |k,v|
     if k == "children" && v != 'null'
-      v.each {|c| conversion(c,output)}
+      relation['parents'].push({output["nodes"].last['trackName'] => v})
+      @relation = relation
+      v.each {|c| conversion(c,output, relation)}
     end
-    if k != "children" || (k=='children' && v=='null') 
-      if k == 'trackName'
-        output["nodes"].push({k => v})
-      elsif k != 'trackName'
-        output["nodes"].last[k] = v
-      end
-      # puts output["nodes"].last
-      # output["nodes"].push(k => v)
+    if k != "children" || (k=='children' && v=='null')
+      initializer(k,v,output)
     end
   end
-  output
+  puts relation
 end
 
-conversion(sunburst, network)
+
+
+
+
+def self.initializer (k,v,output)
+    if k == 'trackName'
+      output["nodes"].push({k => v})
+    elsif k != 'trackName'
+      output["nodes"].last[k] = v
+    end
+end
+
+
+
+output = conversion(sunburst, network)
+
+binding.pry
 
 puts network
+
+end
