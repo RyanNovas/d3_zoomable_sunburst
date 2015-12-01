@@ -140,6 +140,10 @@ end
 
 output = conversion(sunburst, network)
 
+def self.link_builder
+
+end
+
 binding.pry
 
 puts network
