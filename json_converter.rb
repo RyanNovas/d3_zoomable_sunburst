@@ -3,10 +3,15 @@ require 'pry'
 
 class Parser
 
+    @file = File.read('json_template.json')
+    @file2 = File.read('sample.json')
+
+
+
 null = "null"
 
 sunburst = {
-  "trackName" => null,
+  "trackName" => 'Album',
   "artistName" => "A Tribe Called Quest",
   "albumName" => "The Low End theory",
   "year" => "1991",
@@ -106,23 +111,26 @@ sunburst = {
 {"trackName"=>"Think Twice","artistName"=>"Live Poets","albumName"=>"Whats It All About","year"=>1996,"link"=>null,"children"=>null,"value"=>1}]}]}]
 }
 
-network = {"nodes"=>[], "links"=>[]}
+@network = {"nodes"=>[], "links"=>[]}
 
 def self.conversion (json, output, relation = nil)
-  relation = {'parents' =>[]} if relation == nil
-  @relation = relation
+  @relation = {'parents' =>[]} if relation == nil
   json.map do |k,v|
+
+    if k == 'trackName'
+      @parent = v
+    end
     if k == "children" && v != 'null'
-      relation['parents'].push({output["nodes"].last['trackName'] => v})
-      @relation = relation
+      @relation['parents'].push({output["nodes"].last['trackName'] => v})
+      v.each {|c| @network["links"].push({"source" => @parent, "target" => c["trackName"]})}
       v.each {|c| conversion(c,output, relation)}
     end
     if k != "children" || (k=='children' && v=='null')
       initializer(k,v,output)
     end
   end
-  puts relation
 end
+
 
 
 
@@ -138,7 +146,7 @@ end
 
 
 
-output = conversion(sunburst, network)
+output = conversion(sunburst, @network)
 
 def self.link_builder
 
