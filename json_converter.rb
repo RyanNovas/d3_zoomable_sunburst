@@ -116,7 +116,6 @@ sunburst = {
 def self.conversion (json, output, relation = nil)
   @relation = {'parents' =>[]} if relation == nil
   json.map do |k,v|
-
     if k == 'trackName'
       @parent = v
     end
@@ -133,9 +132,6 @@ end
 
 
 
-
-
-
 def self.initializer (k,v,output)
     if k == 'trackName'
       output["nodes"].push({k => v})
@@ -143,6 +139,7 @@ def self.initializer (k,v,output)
       output["nodes"].last[k] = v
     end
 end
+
 
 
 
