@@ -140,6 +140,13 @@ def self.initializer (k,v,output)
     end
 end
 
+def self.uid_builder
+  @network['nodes'].each do |n|
+    n["uniqueID"] = (n['trackName'] + '_' + n['artistName']).gsub(/\s+/, "_").downcase
+    n["uniqueID"] = n["uniqueID"].gsub(/[\W\d]+/, "")
+  end
+end
+
 
 
 
