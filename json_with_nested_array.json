@@ -1,11 +1,11 @@
-{
+{[
   "trackName" : null,
   "artistName" : "A Tribe Called Quest",
   "albumName" : "The Low End theory",
   "year" : "1991",
   "link" : "Link to Music",
   "uniqueID" : "Number -- NOT String",
-  "levelID" : 1,
+  "level_id" : 1,
   "children" : [
       {"trackName":"Jazz","artistName":"A Tribe Called Quest","albumName":"The Low End Theory","year":1991,"link":null,"children":
         [
@@ -98,4 +98,4 @@
 {"trackName":"Psycho Dwarf","artistName":"The Beatnuts","albumName":"The Beatnuts: Street Level","year":1993,"link":null,"children":null,"value":1},
 {"trackName":"Man on","artistName":"Tony Da Skitzo","albumName":"Who U Talkin' 2","year":1995,"link":null,"children":null,"value":1},
 {"trackName":"Think Twice","artistName":"Live Poets","albumName":"Whats It All About","year":1996,"link":null,"children":null,"value":1}]}]}]
-}
+]}

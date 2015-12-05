@@ -7,52 +7,52 @@ class Parser
     @file = File.read('json_template.json')
     @file2 = File.read('sample.json')
     @sunburst = JSON.parse(@file)
+    @sunburst['id'] = 'album_a_tribe_called_quest'
+    @sunburst['level_id'] = 1
     @network = {"nodes"=>[], "links"=>[]}
+  end
+
+  def push_to_network
+    pusher(@sunburst)
+    @sunburst['children'].each do |a|
+      child_helper(a, @sunburst)
+      if a["children"]
+        a["children"].each do |b|
+          child_helper(b, a)
+          if b["children"]
+            b["children"].each do |c|
+              child_helper(c, b)
+            end
+          end
+        end
+      end
+    end
     binding.pry
   end
 
-  def push_to_nodes
-    @sunburst.each do |k,v|
-      @network['nodes'].push |
+  def child_helper(child, parent)
+    child['level_id'] = parent['level_id'] + 1
+    child['id'] = uid_builder(child)
+    link_builder(parent, child)
+    pusher(child)
+  end
 
+  def pusher(node)
+    updated = node.dup
+    updated.delete("children")
+    @network['nodes'].push(updated)
+  end
 
+  def uid_builder(c)
+    c["id"] = (c['trackName'] + '_' + c['artistName']).gsub(/\s+/, "_").downcase
+    c["id"] = c["id"].gsub(/[\W]+/, "")
+  end
 
+  def link_builder(parent, child)
+    @network["links"].push({"source" => parent["id"], 'target' => child["id"]})
+  end
 
-
-
-# def self.conversion (json, output, relation = nil)
-#   relation = {'parents' =>[]} if relation == nil
-#   @relation = relation
-#   json.map do |k,v|
-#     if k == "children" && v != 'null'
-#       relation['parents'].push({output["nodes"].last['trackName'] => v})
-#       @relation = relation
-#       v.each {|c| conversion(c,output, relation)}
-#     end
-#     if k != "children" || (k=='children' && v=='null')
-#       initializer(k,v,output)
-#     end
-#   end
-#   puts @relation
-# end
-#
-# def self.initializer (k,v,output)
-#     if k == 'trackName'
-#       output["nodes"].push({k => v})
-#     elsif k != 'trackName'
-#       output["nodes"].last[k] = v
-#     end
-# end
-
-#
-#
-# output = conversion(@sunburst, network)
-
-# def self.link_builder
-#
-# end
-
-puts network
 
 end
 x = Parser.new
+x.push_to_network

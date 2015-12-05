@@ -10,7 +10,7 @@ class Parser
 
 null = "null"
 
-sunburst = {
+@sunburst = {
   "trackName" => 'Album',
   "artistName" => "A Tribe Called Quest",
   "albumName" => "The Low End theory",
@@ -128,6 +128,7 @@ def self.conversion (json, output, relation = nil)
       initializer(k,v,output)
     end
   end
+  uid_and_link_builder
 end
 
 
@@ -158,7 +159,7 @@ end
 
 
 
-output = conversion(sunburst, @network)
+output = conversion(@sunburst, @network)
 
 binding.pry
 
