@@ -5,7 +5,6 @@ class Parser
 
   def initialize
     @file = File.read('json_template.json')
-    @file2 = File.read('sample.json')
     @sunburst = JSON.parse(@file)
     @sunburst['id'] = 'album_a_tribe_called_quest'
     @sunburst['level_id'] = 1
@@ -27,7 +26,6 @@ class Parser
         end
       end
     end
-    binding.pry
   end
 
   def child_helper(child, parent)
